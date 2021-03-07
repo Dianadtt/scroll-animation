@@ -4,12 +4,52 @@
 }
 
 body {
+    background-color: #efedd6;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    /* height: 100vh; */
+    /* overflow: hidden; */
     align-items: center;
+    background-color: lightgray;
+}
+
+h1 {
+    margin: 10px;
+}
+
+img {
+    width: 320px;
+    height: 290px;
+    margin-bottom: 5px;
+}
+
+.box h2 {
+    font-size: 20px;
+}
+
+.box {
+    background-color: grey;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(300%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-300%);
+}
+
+.box.show {
+    transform: translateX(0);
 }
